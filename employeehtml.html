@@ -1,0 +1,41 @@
+<h1>Employee Details</h1>
+<h1>{{ .Title }}</h1>
+<h2>{{ .Employees }}</h2>
+
+<table>
+    <thead>
+        <th>Employee ID from Key</th>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Employee Department</th>
+    </thead>
+    <tbody>
+        {{ range $key, $value := .Employees}}
+        <tr>
+            <td>{{ $key }}</td>
+            <td>{{ $value.EmpId }}</td>
+            <td>{{ $value.EmpName }}</td>
+            <td>{{ $value.EmpDepartment }}</td>
+        </tr>
+        {{end}}
+    </tbody>
+</table>
+
+<h2>{{ .ArrEmployees }}</h2>
+
+<table>
+        <thead>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Employee Department</th>
+        </thead>
+        <tbody>
+            {{ range $emp := .ArrEmployees}}
+            <tr>
+                <td>{{ $emp.EmpId }}</td>
+                <td>{{ $emp.EmpName }}</td>
+                <td>{{ $emp.EmpDepartment }}</td>
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
