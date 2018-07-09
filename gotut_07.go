@@ -40,6 +40,41 @@ func employeeDetails(w http.ResponseWriter, r *http.Request) {
 			EmpName:       "Akshay",
 			EmpDepartment: "Sales Development",
 		},
+		{
+			EmpId:         "EMP004",
+			EmpName:       "Aziz",
+			EmpDepartment: "HR",
+		},
+		{
+			EmpId:         "EMP005",
+			EmpName:       "Mandar",
+			EmpDepartment: "Admin",
+		},
+		{
+			EmpId:         "EMP006",
+			EmpName:       "Mahesh",
+			EmpDepartment: "HR",
+		},
+		{
+			EmpId:         "EMP007",
+			EmpName:       "Anil",
+			EmpDepartment: "Admin",
+		},
+		{
+			EmpId:         "EMP008",
+			EmpName:       "Kashif",
+			EmpDepartment: "Product Development",
+		},
+		{
+			EmpId:         "EMP009",
+			EmpName:       "Imam",
+			EmpDepartment: "Project Development",
+		},
+		{
+			EmpId:         "EMP010",
+			EmpName:       "Amit",
+			EmpDepartment: "Project Management",
+		},
 	}
 
 	employee_map := make(map[string]Employee)
